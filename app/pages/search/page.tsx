@@ -9,16 +9,16 @@ import dynamic from "next/dynamic";
 
 import Footer from "@/app/components/footer/page";
 import Header from "@/app/components/Header/Header/page";
-import ListingCard from "../../app/components/ListingCard";
+import ListingCard from "../../components/ListingCard";
 
 // الصور
-import img1 from "../../public/img2.jpg";
-import img2 from "../../public/img4.jpg";
-import img3 from "../../public/img3.jpg";
-import img4 from "../../public/img1.jpg";
+import img1 from "../../../public/img2.jpg";
+import img2 from "../../../public/img4.jpg";
+import img3 from "../../../public/img3.jpg";
+import img4 from "../../../public/img1.jpg";
 
 // Map بدون SSR
-const Map = dynamic(() => import("../../app/Map"), { ssr: false });
+const Map = dynamic(() => import("../../Map"), { ssr: false });
 
 type Listing = {
   img: string;
