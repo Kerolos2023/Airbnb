@@ -1,6 +1,6 @@
-import bannerImage from "../../../public/9cd49b03-7ae1-4572-8ed5-471929876295.avif"
+import bannerImage from "../../public/9cd49b03-7ae1-4572-8ed5-471929876295.jpg"
 import Image from 'next/image';
-import  Explordata  from "../../components/Exploredata/page";
+import  Explordata  from "../components/Exploredata/page";
 import Gitlive from "@/app/components/gitlive/page";
 import GreatestOutdoors from "@/app/components/GreatestOutdoors/pag";
 const Banner = () => {

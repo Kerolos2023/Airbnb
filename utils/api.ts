@@ -8,7 +8,7 @@ export type CardItem = {
 
 export const Explordata = async (): Promise<CardItem[]> => {
     try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/products/category/furniture?limit=8`, { cache: 'no-store' });
+        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/products/category/furniture?limit=8`, {next: { revalidate: 60 } });
         const data = await res.json();
         console.log("Fetched explore data:", data);
         return data.products;
@@ -21,7 +21,7 @@ export const Explordata = async (): Promise<CardItem[]> => {
 export async function GetLive() {
   try {
     const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL_GITLIVE}/b/VHHT`, {
-      cache: "no-store",
+      next: { revalidate: 60 }
     });
 
     console.log("Status:", res.status);

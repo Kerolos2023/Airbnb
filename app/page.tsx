@@ -1,4 +1,4 @@
-import Homepage from "./pages/Home/page"
+import Homepage from "./Home/page"
 import Header from "./components/Header/Header/page";
 import Footer from "./components/footer/page";
 export default function Home() {
