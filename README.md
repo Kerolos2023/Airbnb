@@ -5,9 +5,7 @@ Users can search for stays by location, select a date range, and choose the numb
 
 ## Live Demo
 
-Deployed on Vercel:
-
-https://airbnb-d5z8-q0k3u5jgg-kerolos2023s-projects.vercel.app
+https://sensational-kangaroo-6dbff6.netlify.app/
 
 ## Features
 
@@ -24,7 +22,7 @@ https://airbnb-d5z8-q0k3u5jgg-kerolos2023s-projects.vercel.app
 * Next.js
 * React
 * TypeScript
-* Tailwind CSS
+* Bootstarp
 * React Icons
 * react-date-range
 
